@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freight Forwarding ERP - Lead Entry Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Main Form Container -->
+        <main class="form-card">
+            
+            <!-- Header Section -->
+            <header class="form-header">
+                <h1>Freight Forwarding ERP</h1>
+                <p class="subtitle">Lead Entry Form</p>
+                <div class="lead-badge">
+                    <span>Lead No: L2025-5001</span>
+                </div>
+            </header>
+
+            <!-- Main Form Content -->
+            <form id="lead-form" onsubmit="event.preventDefault();">
+                <div class="form-grid">
+                    
+                    <!-- Left Column -->
+                    <div class="form-column">
+                        
+                        <!-- Card 1: Lead Identification -->
+                        <section class="sub-card">
+                            <h2>Lead Identtifcation</h2>
+                            
+                            <div class="form-group row-align">
+                                <label for="lead-date">Lead Date</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="lead-date" value="Nov 5, 2025" placeholder="Select Date">
+                                    <span class="input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row-align">
+                                <label for="sales-person">Sales Person Name</label>
+                                <div class="input-with-icon">
+                                    <input type="text" id="sales-person" value="John Doe" placeholder="Search Person">
+                                    <span class="input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row-align">
+                                <label>Lead Source</label>
+                                <div class="radio-group">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="lead-source" value="Website">
+                                        <span class="radio-indicator"></span>
+                                        <span class="radio-text">Website</span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="lead-source" value="Referral">
+                                        <span class="radio-indicator"></span>
+                                        <span class="radio-text">Referral</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group row-align">
+                                <label>Lead Rating / Potential</label>
+                                <div class="rating-pills">
+                                    <button type="button" class="pill pill-hot active" data-rating="Hot">Hot</button>
+                                    <button type="button" class="pill pill-warm-border" data-rating="Warm1">Warm</button>
+                                    <button type="button" class="pill pill-grey" data-rating="Warm2">Warm</button>
+                                    <button type="button" class="pill pill-grey" data-rating="Cold">Cold</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group row-align lead-status-row">
+                                <label>Lead Status</label>
+                                <span class="status-badge">Open</span>
+                            </div>
+                        </section>
+
+                        <!-- Card 2: Customer Details -->
+                        <section class="sub-card">
+                            <h2>Customer Details</h2>
+
+                            <div class="form-group1 row-align">
+                                <div class="input-with-icon" >
+                                    <input type="text" value="Global Imports Inc*" placeholder="Search Company" >
+                                    <span class="input-icon blue-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row-align">
+                                <label>Customer Name</label>
+                                <input type="text" value="Company Inc*" placeholder="Enter Customer Name">
+                            </div>
+
+                            <div class="form-group row-align">
+                                <label>Contact Person*</label>
+                                <input type="text" value="" placeholder="">
+                            </div>
+
+                            <div class="form-group row-align">
+                                <label>Contact Number</label>
+                                <input type="text" value="jane.smith@globalimports.com" placeholder="Enter Contact Number">
+                            </div>
+
+                            <div class="form-group row-align">
+                                <label>Email ID</label>
+                                <input type="text" value="Jane Smith" placeholder="Enter Email ID">
+                            </div>
+
+                            <div class="form-group row-align">
+                                <label>Country / Location</label>
+                                <input type="text" value="Uoidiijred, Utates / New York" placeholder="Enter Location">
+                            </div>
+
+                            <div class="form-group row-align">
+                                <label>Customer Type</label>
+                                <div class="select-wrapper">
+                                    <select id="customer-type">
+                                        <option value="" selected></option>
+                                        <option value="Shipper">Shipper</option>
+                                        <option value="Consignee">Consignee</option>
+                                        <option value="Overseas Agent">Overseas Agent</option>
+                                    </select>
+                                    <span class="select-chevron">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row-align checkboxes-container">
+                                <label class="empty-label"></label>
+                                <div class="checkbox-columns">
+                                    <div class="checkbox-column">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox-indicator"></span>
+                                            <span class="checkbox-text">Shipper</span>
+                                        </label>
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox-indicator"></span>
+                                            <span class="checkbox-text">Consignee</span>
+                                        </label>
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox-indicator"></span>
+                                            <span class="checkbox-text">Overseas Agent</span>
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-column right-check-col">
+                                        <label class="custom-checkbox empty-label-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox-indicator"></span>
+                                        </label>
+                                        <label class="custom-checkbox empty-label-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox-indicator"></span>
+                                        </label>
+                                        <label class="custom-checkbox empty-label-checkbox">
+                                            <input type="checkbox" checked>
+                                            <span class="checkbox-indicator"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Created By metadata box -->
+                        <div class="metadata-box">
+                            <p>Created By: Jahn Doe</p>
+                            <p>Cresled Date & Time:</p>
+                            <p>Created Dat & Time: Nev 5, 2025, 05:06 PM</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="form-column">
+                        
+                        <!-- Card 3: Business/Shipment Details -->
+                        <section class="sub-card">
+                            <div class="card-header-with-icon">
+                                <h2>Business/Shipment Details</h2>
+                                <span class="ship-icon">
+                                    <!-- Cargo Ship SVG -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="ship-svg">
+                                        <path d="M2 17h20L19 21H5L2 17z"/>
+                                        <path d="M5 17V8h4v9M9 17V5h6v12M15 17V8h4v9"/>
+                                        <line x1="2" y1="12" x2="22" y2="12"/>
+                                    </svg>
+                                </span>
+                            </div>
+
+                          
+
+                            <div class="checkbox-grid-container">
+                                <div class="g1">
+                                <div class="grid-checkbox-item">
+                                <label>Business Type</label></div>
+                                <div class="grid-checkbox-item">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox-indicator"></span>
+                                        <span class="checkbox-text">Air Export</span>
+                                    </label>
+                                </div>
+
+
+                                <div class="grid-checkbox-item">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        <span class="checkbox-text">Air Import</span>
+                                    </label>
+                                </div>
+
+
+                                 <div class="grid-checkbox-item">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        <span class="checkbox-text">Sea Import</span>
+                                    </label>
+                                </div>
+
+                                  <div class="grid-checkbox-item">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        <span class="checkbox-text">Custom Claarance</span>
+                                    </label>
+                                </div>
+
+                                 <div class="grid-checkbox-item">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox-indicator"></span>
+                                        <span class="checkbox-text">Transportation</span>
+                                    </label>
+                                </div>
+
+                            </div>
+
+                             <div class="g1">
+                               
+                                <div class="grid-checkbox-item">
+                                <label>Air Export</label></div>
+                                <div class="grid-checkbox-item">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox-indicator"></span>
+                                        <span class="checkbox-text">Air Import</span>
+                                    </label>
+                                </div>
+                               
+                                <div class="grid-checkbox-item">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox-indicator"></span>
+                                        <span class="checkbox-text">Sea Import</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="grid-checkbox-item">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        <span class="checkbox-text">Custom Claarance</span>
+                                    </label>
+                                </div>
+                               
+                                <div class="grid-checkbox-item">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox-indicator"></span>
+                                        <span class="checkbox-text">Transportation</span>
+                                    </label>
+                                </div>
+                                <div class="grid-checkbox-item">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox-indicator"></span>
+                                        <span class="checkbox-text">Menth</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            </div>
+
+                            <div class="form-group row-align interested-service-row">
+                                <label>Interested Service</label>
+                                <div class="interested-flex">
+                                    <span class="inline-label">Shippotenncy</span>
+                                    <input type="text" class="shippotenncy-input" value="5 Month">
+                                </div>
+                            </div>
+
+                            <div class="form-group row-align">
+                                <label>Shipiment Frequency</label>
+                                <div class="input-with-icon">
+                                    <input type="text" value="FCL - Full Container Load" placeholder="Search Frequency">
+                                    <span class="input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Card 4: Activity & Follow-up -->
+                        <section class="sub-card">
+                            <h2>Activity & Follow-up</h2>
+                            
+                            <div class="activity-notes-box">
+                                <p>Initial call, prospect needs help with ocean freight from China.</p>
+                            </div>
+
+                            <h3 class="section-subheading">Discussion & Notes</h3>
+
+                            <div class="form-group row-align follow-up-date-row">
+                                <label>Follow-up Date</label>
+                                <div class="follow-up-badge-container">
+                                    <span class="date-badge">Nov 10, 2025 - 10:00 AM</span>
+                                    <span class="clock-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="clock-svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row-align">
+                                <label>Followw Person</label>
+                                <div class="input-with-icon">
+                                    <input type="text" value="John Doe">
+                                    <span class="input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div >
+                                <label class="h">Conversion Status</label><br>
+                                <input type="text" value="John Doe" style="margin-top: 8px;">
+                            </div>
+                            <br>
+                            <div >
+                                <label >Compettior Name</label><br>
+                                <input type="text" value="Pending Quotation" style="margin-top: 8px;">
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+
+                <!-- Action Buttons Footer -->
+                <footer class="form-actions">
+                    <button type="button" class="btn btn-cancel">Cancel</button>
+                    <button type="submit" class="btn btn-save">Save Lead</button>
+                    <button type="button" class="btn btn-convert">Convert to Quotation</button>
+                </footer>
+            </form>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
